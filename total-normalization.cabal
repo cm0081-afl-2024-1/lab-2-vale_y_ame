@@ -1,0 +1,33 @@
+cabal-version:      3.0
+name:               total-normalization
+version:            0.1.0.0
+license:            MIT
+license-file:       LICENSE
+author:             Amelia Hoyos Velez and Valentina Vasquez George
+maintainer:         amelia327.hoyos@gmail.com
+
+category:           Math
+build-type:         Simple
+
+extra-doc-files:    README.md
+
+common warnings
+    ghc-options: -Wall -Werror -Wmissing-local-signatures
+
+library
+    import:           warnings
+    exposed-modules:  LC
+    build-depends:    base ^>=4.19.1.0
+    hs-source-dirs:   src/lib
+    default-language: Haskell2010
+
+executable total-normalization
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:
+        base ^>=4.19.1.0,
+        total-normalization
+
+    hs-source-dirs:   src/Main
+
+    default-language: Haskell2010
