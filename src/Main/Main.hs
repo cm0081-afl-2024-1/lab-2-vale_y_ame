@@ -9,7 +9,7 @@ lambdaIdentity :: LambdaExpress
 lambdaIdentity =
   App (Abs "x" (Var "x")) (Var "Otter")
 
--- Example lambda expression that normalizes in tries
+-- Example lambda expression that normalizes in 3 tries
 lambdaBinaryFunction :: LambdaExpress
 lambdaBinaryFunction =
   App

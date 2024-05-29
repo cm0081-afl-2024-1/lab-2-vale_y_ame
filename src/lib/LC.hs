@@ -4,7 +4,7 @@ module LC where
 data LambdaExpress
   = Var String -- Variable
   | Abs String LambdaExpress -- Abstraction (λx.t)
-  | App LambdaExpress LambdaExpress -- Aplication (t1 t2)
+  | App LambdaExpress LambdaExpress -- Application (t1 t2)
   deriving (Eq, Show)
 
 -- Function to convert a LambdaExpress to a string representation
